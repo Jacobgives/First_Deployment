@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <title>Login and Registration</title>
+  </head>
+  <body>
+    <table>
+      <form class="" action="register/" method="post">
+        {%csrf_token%}
+        <tr>
+          <td>Registration</td>
+        </tr>
+        <tr>
+          <td>First Name: </td>
+          <td><input type="text" name="fname" value=""></td>
+        </tr>
+        <tr>
+          <td>Last Name: </td>
+          <td><input type="text" name="lname" value=""></td>
+        </tr>
+        <tr>
+          <td>Email: </td>
+          <td><input type="text" name="email" value=""></td>
+        </tr>
+        <tr>
+          <td>Password: </td>
+          <td><input type="text" name="p" value=""></td>
+        </tr>
+        <tr>
+          <td>confirm pw: </td>
+          <td><input type="text" name="cp" value=""></td>
+        </tr>
+        <tr>
+        <td><input type="submit" value="Register"></td>
+        </tr>
+      </form>
+    </table>
+    <table>
+      <form class="" action="login/" method="post">
+        {%csrf_token%}
+        <tr>
+          <td>Login</td>
+        </tr>
+        <tr>
+          <td>Email: </td>
+          <td><input type="text" name="lemail" value=""></td>
+        </tr>
+        <tr>
+          <td>Password: </td>
+          <td><input type="text" name="lp" value=""></td>
+        </tr>
+        <tr>
+          <td><input type="submit" name="" value="Login"></td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>
